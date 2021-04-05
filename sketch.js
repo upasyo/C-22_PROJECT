@@ -10,11 +10,11 @@ const Body = Matter.Body;
 
 function preload()
 {
-	starImg = loadImage("images/star.png");
-	bgImg = loadImage("images/starNight.png");
+	starImg = loadImage("star.png");
+	bgImg = loadImage("starNight.png");
 	//load animation for fairy here
-    fairy_Img = loadAnimation("images/fairyimage1.png","images/fairyimage2.png");
-	joy_sound = loadSound("sound/JoyMusic.mp3");
+    fairy_Img = loadAnimation("fairyimage1.png","fairyimage2.png");
+	joy_sound = loadSound("JoyMusic.mp3");
 }
 
 function setup() {
@@ -23,7 +23,7 @@ function setup() {
 	//write code to play fairyVoice sound
 
 	//create fairy sprite and add animation for fairy
-
+       joy_sound.play();
 
 	star = createSprite(width,30);
 	star.addImage(starImg);
@@ -47,7 +47,7 @@ function setup() {
 
 function draw() {
   background(bgImg);
-joy_sound.play();
+
   
   star.x= starBody.position.x 
   star.y= starBody.position.y 
