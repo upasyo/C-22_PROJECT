@@ -33,7 +33,7 @@ function setup() {
 	fairy = createSprite(width/6,360.4);
 	fairy.addAnimation("fairy_dancing",fairy_Img);
 	fairy.scale=0.2;
-
+        joy_sound.play();
 	engine = Engine.create();
 	world = engine.world;
 
@@ -48,7 +48,7 @@ function setup() {
 function draw() {
   background(bgImg);
 
-  joy_sound.stop();
+  
   star.x= starBody.position.x 
   star.y= starBody.position.y 
   
