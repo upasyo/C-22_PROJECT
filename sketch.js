@@ -52,7 +52,7 @@ joy_sound.play();
   star.x= starBody.position.x 
   star.y= starBody.position.y 
   
-  console.log(star.y);
+  console.log(star.x);
 
   //write code to stop star in the hand of fairy
 if(star.y> 200 && starBody.position.y >=330){
