@@ -28,7 +28,7 @@ function setup() {
 	star = createSprite(width,30);
 	star.addImage(starImg);
 	star.scale = 0.2;
-    star.debug=false;
+  
 	star.setCollider("circle",10,20,80);
 	fairy = createSprite(width/6,360.4);
 	fairy.addAnimation("fairy_dancing",fairy_Img);
