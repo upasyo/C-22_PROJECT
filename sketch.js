@@ -40,15 +40,15 @@ function setup() {
 	starBody = Bodies.circle(width/1.5 , 110 , 5 , {restitution:0.5, isStatic:true});
 	World.add(world, starBody);
 	
-	Engine.run(engine);
-
+	
 }
 
 
 function draw() {
   background(bgImg);
 
-  
+  Engine.run(engine);
+
   star.x= starBody.position.x 
   star.y= starBody.position.y 
   
