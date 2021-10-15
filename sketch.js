@@ -12,11 +12,11 @@ var joy_sound;
 
 function preload()
 {
-	starImg = loadImage("star.png");
-	bgImg = loadImage("starNight.png");
+	starImg = loadImage("images/starImage.png");
+	bgImg = loadImage("images/starNight.png");
 	//load animation for fairy here
-    fairy_Img = loadAnimation("fairyimage1.png","fairyimage2.png");
-	joy_sound = loadSound("JoyMusic.mp3");
+    fairy_Img = loadAnimation("images/fairyimage1.png","images/fairyimage2.png");
+	joy_sound = loadSound("sound/JoyMusic.mp3");
 }
 
 function setup() {
@@ -29,7 +29,7 @@ function setup() {
 
 	star = createSprite(width,30);
 	star.addImage(starImg);
-	star.scale = 0.2;
+	star.scale = 0.06;
     star.debug=false;
 	star.setCollider("circle",10,20,80);
 	fairy = createSprite(width/6,360.4);
